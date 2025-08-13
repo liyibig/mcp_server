@@ -9,7 +9,9 @@ from mcp.server.fastmcp import FastMCP
 import re
 import requests
 from urllib.parse import urlparse
-# Create an MCP server
+
+
+
 mcp = FastMCP("Demo")
 
 
@@ -80,6 +82,5 @@ def greet_user(name: str, style: str = "friendly") -> str:
 
     return f"{styles.get(style, styles['friendly'])} for someone named {name}."
 '''
-if __name__ == "__main__":
-    # Start the MCP server
+def main() -> None:
     mcp.run(transport="stdio")
