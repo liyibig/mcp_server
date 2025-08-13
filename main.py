@@ -82,5 +82,5 @@ def greet_user(name: str, style: str = "friendly") -> str:
 
     return f"{styles.get(style, styles['friendly'])} for someone named {name}."
 '''
-if __name__ == "__main__":​
+if __name__ == "__main__":
     mcp.run(transport="stdio")
